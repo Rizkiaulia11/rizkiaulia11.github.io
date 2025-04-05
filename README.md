@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="id">
 <head><meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8">
