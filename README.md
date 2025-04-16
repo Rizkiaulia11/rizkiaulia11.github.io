@@ -100,7 +100,7 @@
 
   <section id="cv" class="container my-5">
     <h2 class="mb-3 section-title">Curriculum Vitae</h2>
-    <a href="All Dokumen Rizki" class="btn btn-primary mb-3" target="_blank">Download CV</a>
+    <a href="All Dokumen Rizki.pdf" class="btn btn-primary mb-3" target="_blank">Download CV</a>
   </section>
 
   <section id="contact" class="container my-5">
