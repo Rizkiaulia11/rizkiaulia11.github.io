@@ -5,6 +5,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Welcome Banner -->
+  <div class="bg-primary text-white text-center py-2">
+    <p class="mb-0">Selamat datang di portofolio saya! Senang bisa berbagi profil dan pengalaman dengan Anda.</p>
+  </div>
+
   <header class="bg-dark text-white text-center py-5">
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff;">
@@ -27,6 +32,7 @@
           <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
           <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+          <li class="nav-item"><a href="#feedback" class="nav-link">Pesan</a></li>
         </ul>
       </div>
     </div>
@@ -112,6 +118,34 @@
     <p class="section-text"><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
   </section>
 
+  <!-- Feedback Form Section -->
+  <section id="feedback" class="container my-5">
+    <h2 class="mb-3 section-title">Tinggalkan Pesan atau Masukan</h2>
+    <form action="https://formsubmit.co/11rizkiaulia@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Pesan baru dari portofolio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://yourportfolioURL.com/thankyou.html">
+      
+      <div class="mb-3">
+        <label for="name" class="form-label">Nama Anda</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Anda</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Pesan Anda</label>
+        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+  </section>
+
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Rizki Aulia.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
