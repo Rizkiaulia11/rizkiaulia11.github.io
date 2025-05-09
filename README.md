@@ -120,7 +120,7 @@
 
   <!-- Form Umpan Balik -->
   <section id="feedback" class="container my-5">
-    <h2 class="mb-3 section-title">Tinggalkan Umpan Balik</h2>
+    <h2 class="mb-3 section-title">Kirim Komentar</h2>
     <form action="https://formspree.io/f/xrbqlgvn" method="POST">
       <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
