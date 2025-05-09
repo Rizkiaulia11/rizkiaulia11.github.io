@@ -84,13 +84,14 @@
           <li>LabView</li>
           <li>Visual Studio Code</li>
           <li>Psim</li>
+          <li>PLC</li>
         </ul>
       </div>
       <div class="col-md-4">
         <h5>Sertifikat</h5>
         <ul>
-          <li>Sertifikat Kerja Praktek – PT PLN & PT Indonesia Power</li>
-          <li>Sertifikat Studi Independen – Orbit Ventura Indonesia (MSIB)</li>
+          <li>Sertifikat Magang – PT PLN & PT Indonesia Power</li>
+          <li>Sertifikat Studi Independen (MSIB) – Orbit Ventura Indonesia (MSIB)</li>
           <li>Sertifikat Asisten Laboratorium Teknik Elektro</li>
           <li>Sertifikat TOEFL</li>
         </ul>
