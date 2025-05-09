@@ -50,11 +50,11 @@
     <h2 class="mb-3 section-title">Pengalaman & Organisasi</h2>
     <ul>
       <li><strong>Teknisi</strong> di PT Meraki Teknologi Indonesia (4 bulan)</li>
-      <li><strong>Magang</strong> di PT PLN Rayon Pangkalan Susu & Indonesia Power</li>
+      <li><strong>Magang</strong> di PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu </li>
       <li><strong>Studi Independen</strong> di PT Orbit Ventura Indonesia</li>
-      <li><strong>Himpunan Mahasiswa Teknik Elektro</strong> – Divisi Kesekretariatan</li>
+      <li><strong>Himpunan Mahasiswa Teknik Elektro</strong> – Anggota Divisi Kesekretariatan</li>
       <li><strong>Sains Riset & Robotika</strong> – Ketua Divisi SDM</li>
-      <li><strong>Himpunan Mahasiswa Langkat</strong> – Hubungan Masyarakat</li>
+      <li><strong>Himpunan Mahasiswa Langkat</strong> – Anggota Hubungan Masyarakat</li>
     </ul>
   </section>
 
@@ -66,6 +66,7 @@
         <ul>
           <li>Instalasi Listrik</li>
           <li>Instalasi CCTV</li>
+          <li>Instalasi Fiber Optik</li>
           <li>Teknologi Smart Home</li>
           <li>Analisis Jaringan Distribusi</li>
           <li>Perakitan Panel Listrik</li>
