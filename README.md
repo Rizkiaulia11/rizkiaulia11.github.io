@@ -78,7 +78,7 @@
           <li>Perakitan Panel Listrik</li>
           <li>Perawatan & Pengujian Peralatan Listrik</li>
           <li>Welding</li>
-          <li>Pipingk</li>
+          <li>Piping</li>
         </ul>
       </div>
       <div class="col-md-4">
@@ -93,7 +93,7 @@
           <li>LabView</li>
           <li>Visual Studio Code</li>
           <li>Psim</li>
-          <li>IoT(Internet of things)</li>
+          <li>IoT (Internet of things)</li>
           <li>PLC</li>
         </ul>
       </div>
