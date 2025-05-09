@@ -1,5 +1,6 @@
 <html lang="id">
-<head><meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
+<head>
+  <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +33,6 @@
           <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
           <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
-          <li class="nav-item"><a href="#feedback" class="nav-link">Pesan</a></li>
         </ul>
       </div>
     </div>
@@ -118,27 +118,23 @@
     <p class="section-text"><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
   </section>
 
-  <!-- Feedback Form Section -->
+  <!-- Form Umpan Balik -->
   <section id="feedback" class="container my-5">
-    <h2 class="mb-3 section-title">Tinggalkan Pesan atau Masukan</h2>
-    <form action="https://formsubmit.co/11rizkiaulia@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="Pesan baru dari portofolio">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://yourportfolioURL.com/thankyou.html">
-      
+    <h2 class="mb-3 section-title">Tinggalkan Umpan Balik</h2>
+    <form action="https://formspree.io/f/xrbqlgvn" method="POST">
       <div class="mb-3">
-        <label for="name" class="form-label">Nama Anda</label>
-        <input type="text" class="form-control" id="name" name="name" required>
+        <label for="name" class="form-label">Nama</label>
+        <input type="text" class="form-control" id="name" name="nama" required>
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Email Anda</label>
+        <label for="email" class="form-label">Email</label>
         <input type="email" class="form-control" id="email" name="email" required>
       </div>
       <div class="mb-3">
-        <label for="message" class="form-label">Pesan Anda</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        <label for="message" class="form-label">Pesan / Komentar</label>
+        <textarea class="form-control" id="message" name="pesan" rows="4" required></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      <button type="submit" class="btn btn-primary">Kirim</button>
     </form>
   </section>
 
