@@ -26,8 +26,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#about" class="nav-link">Tentang Saya</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Pendidikan</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman dan Orgamisasi </a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman dan Organisasi </a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
           <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
