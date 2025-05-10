@@ -15,7 +15,6 @@
     <div style="display: flex; flex-direction: column; align-items: center;">
       <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff;">
       <h1 class="display-4">Rizki Aulia</h1>
-      <p class="lead mb-0">Teknik Elektro • Universitas Malikussaleh</p>
     </div>
   </header>
 
