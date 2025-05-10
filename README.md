@@ -99,8 +99,8 @@
       <div class="col-md-4">
         <h5>Sertifikat</h5>
         <ul>
-          <li>Sertifikat Magang – PT PLN & PT Indonesia Power</li>
-          <li>Sertifikat Studi Independen (MSIB) – Orbit Ventura Indonesia (MSIB)</li>
+          <li>Sertifikat Magang – PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu</li>
+          <li>Sertifikat Studi Independen (MSIB) – PT. Orbit Ventura Indonesia (MSIB)</li>
           <li>Sertifikat Asisten Laboratorium Teknik Elektro</li>
           <li>Sertifikat TOEFL</li>
         </ul>
