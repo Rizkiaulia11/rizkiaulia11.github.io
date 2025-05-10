@@ -20,15 +20,14 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Portofolio</a>
+      <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Pendidikan</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman dan Orgamisasi </a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
           <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
