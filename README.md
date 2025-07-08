@@ -4,6 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profile-header {
+      background: linear-gradient(135deg, #343a40 0%, #6c757d 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .profile-header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
+      opacity: 0.3;
+    }
+    .profile-content {
+      position: relative;
+      z-index: 1;
+    }
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
   <!-- Welcome Banner -->
@@ -11,9 +41,9 @@
     <p class="mb-0">Selamat datang di portofolio saya! Senang bisa berbagi profil dan pengalaman dengan Anda.</p>
   </div>
 
-  <header class="bg-dark text-white text-center py-5">
-    <div style="display: flex; flex-direction: column; align-items: center;">
-      <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff;">
+  <header class="profile-header text-white text-center py-5">
+    <div class="profile-content" style="display: flex; flex-direction: column; align-items: center;">
+      <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" class="profile-img">
       <h1 class="display-4">Rizki Aulia</h1>
     </div>
   </header>
