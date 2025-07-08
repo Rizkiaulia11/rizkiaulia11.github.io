@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
+
   <style>
+    /* Animasi Background */
     @keyframes gradientMove {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
+
     .profile-header {
       background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
       background-size: 300% 300%;
@@ -20,6 +22,7 @@
       overflow: hidden;
       color: white;
     }
+
     .profile-header::before {
       content: "";
       position: absolute;
@@ -28,40 +31,48 @@
       opacity: 0.15;
       animation: zoomPan 20s linear infinite;
     }
+
     @keyframes zoomPan {
       0% { transform: scale(1) rotate(0deg); }
       50% { transform: scale(1.1) rotate(1deg); }
       100% { transform: scale(1) rotate(0deg); }
     }
+
     .profile-content {
       position: relative;
       z-index: 1;
     }
+
     .profile-img {
-      width: 250px;
-      height: 250px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
+      border-radius: 50%;
       margin-bottom: 20px;
       border: 4px solid rgba(255, 255, 255, 0.8);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
       transition: transform 0.3s ease;
-      /* Hapus border-radius agar kotak */
     }
+
     .profile-img:hover {
       transform: scale(1.05);
     }
+
+    /* Efek Partikel */
     .particles {
       position: absolute;
       inset: 0;
       z-index: 0;
       overflow: hidden;
     }
+
     .particle {
       position: absolute;
       background: rgba(255, 255, 255, 0.5);
       border-radius: 50%;
       animation: float linear infinite;
     }
+
     @keyframes float {
       0% { transform: translateY(0) translateX(0); opacity: 1; }
       100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
@@ -70,10 +81,12 @@
 </head>
 
 <body>
+  <!-- Welcome Banner -->
   <div class="bg-primary text-white text-center py-2">
     <p class="mb-0">Selamat datang di portofolio saya! Senang bisa berbagi profil dan pengalaman dengan Anda.</p>
   </div>
 
+  <!-- Profile Header -->
   <header class="profile-header text-center py-5">
     <div class="particles" id="particles-js"></div>
     <div class="profile-content d-flex flex-column align-items-center">
@@ -82,10 +95,10 @@
     </div>
   </header>
 
-  <!-- Navigasi tanpa tulisan pojok kiri -->
+  <!-- Navigasi -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-      <!-- Hapus brand agar pojok kiri kosong -->
+      <a class="navbar-brand" href="#">Menu</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -102,12 +115,15 @@
     </div>
   </nav>
 
-  <!-- Konten tetap sama -->
+  <!-- Tentang Saya -->
   <section id="about" class="container my-5">
     <h2 class="mb-3">Tentang Saya</h2>
-    <p>Saya adalah lulusan Teknik Elektro Universitas Malikussaleh, dapat diandalkan, mudah beradaptasi, dan mampu bekerja sama dengan baik. Saya memiliki pengalaman magang di PT. PLN (Persero), studi independen di PT. Orbit Ventura Indonesia, serta bekerja sebagai teknisi di PT. Meraki Teknologi Indonesia.</p>
+    <p>
+      Saya adalah lulusan Teknik Elektro Universitas Malikussaleh, dapat diandalkan, mudah beradaptasi, dan mampu bekerja sama dengan baik. Saya memiliki pengalaman magang di PT. PLN (Persero), studi independen di PT. Orbit Ventura Indonesia, serta bekerja sebagai teknisi di PT. Meraki Teknologi Indonesia.
+    </p>
   </section>
 
+  <!-- Pendidikan -->
   <section id="education" class="container my-5">
     <h2 class="mb-3">Pendidikan</h2>
     <ul>
@@ -117,6 +133,7 @@
     </ul>
   </section>
 
+  <!-- Pengalaman -->
   <section id="experience" class="container my-5">
     <h2 class="mb-3">Pengalaman & Organisasi</h2>
     <ul>
@@ -129,6 +146,7 @@
     </ul>
   </section>
 
+  <!-- Kemampuan -->
   <section id="skills" class="container my-5">
     <h2 class="mb-3">Kemampuan & Sertifikat</h2>
     <div class="row">
@@ -162,11 +180,13 @@
     </div>
   </section>
 
+  <!-- CV -->
   <section id="cv" class="container my-5">
     <h2 class="mb-3">Curriculum Vitae</h2>
     <a href="RA FILE.pdf" class="btn btn-primary mb-3" target="_blank">Download CV</a>
   </section>
 
+  <!-- Kontak -->
   <section id="contact" class="container my-5">
     <h2 class="mb-3">Kontak</h2>
     <p><strong>Email:</strong> <a href="mailto:11rizkiaulia@gmail.com">11rizkiaulia@gmail.com</a></p>
@@ -174,6 +194,7 @@
     <p><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
   </section>
 
+  <!-- Form Feedback -->
   <section id="feedback" class="container my-5">
     <h2 class="mb-3">Kirim Komentar</h2>
     <form action="https://formspree.io/f/xrbqlgvn" method="POST">
@@ -193,11 +214,13 @@
     </form>
   </section>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Rizki Aulia.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const particlesContainer = document.getElementById('particles-js');
