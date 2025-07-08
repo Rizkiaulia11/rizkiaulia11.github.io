@@ -5,11 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    /* Animasi Background */
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
     .profile-header {
-      background: linear-gradient(135deg, #343a40 0%, #6c757d 100%);
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 300% 300%;
+      animation: gradientMove 15s ease infinite;
       position: relative;
       overflow: hidden;
+      color: white;
     }
+    
     .profile-header::before {
       content: "";
       position: absolute;
@@ -18,20 +29,57 @@
       right: 0;
       bottom: 0;
       background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
-      opacity: 0.3;
+      opacity: 0.15;
+      animation: zoomPan 20s linear infinite;
     }
+    
+    @keyframes zoomPan {
+      0% { transform: scale(1) rotate(0deg); }
+      50% { transform: scale(1.1) rotate(1deg); }
+      100% { transform: scale(1) rotate(0deg); }
+    }
+    
     .profile-content {
       position: relative;
       z-index: 1;
     }
+    
     .profile-img {
       width: 150px;
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border: 4px solid rgba(255,255,255,0.8);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+    
+    /* Efek partikel */
+    .particles {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+    
+    .particle {
+      position: absolute;
+      background: rgba(255,255,255,0.5);
+      border-radius: 50%;
+      animation: float linear infinite;
+    }
+    
+    @keyframes float {
+      0% { transform: translateY(0) translateX(0); opacity: 1; }
+      100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
     }
   </style>
 </head>
@@ -42,12 +90,16 @@
   </div>
 
   <header class="profile-header text-white text-center py-5">
+    <!-- Partikel animasi -->
+    <div class="particles" id="particles-js"></div>
+    
     <div class="profile-content" style="display: flex; flex-direction: column; align-items: center;">
       <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" class="profile-img">
       <h1 class="display-4">Rizki Aulia</h1>
     </div>
   </header>
 
+  <!-- Bagian lainnya tetap sama seperti sebelumnya -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Menu</a>
@@ -67,6 +119,7 @@
     </div>
   </nav>
 
+  <!-- Bagian konten lainnya tetap sama -->
   <section id="about" class="container my-5">
     <h2 class="mb-3 section-title">Tentang Saya</h2>
     <p class="section-text">Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi. Dan Saya memiliki pengalaman kerja di PT. Meraki Teknologi Indonesia selama 4 bulan sebagai teknisi.</p>
@@ -75,9 +128,9 @@
   <section id="education" class="container my-5">
     <h2 class="mb-3 section-title">Pendidikan</h2>
     <ul>
-      <li><strong>Universitas Malikussaleh</strong> – Teknik Elektro (2020 – 2024)</li>
-      <li><strong>SMK Teknologi Industri YPT. P. Berandan</strong> – Teknik Instalasi Listrik (2017 – 2020)</li>
-      <li><strong>SMP Negeri 1 Pangkalan Susu</strong> (2014 – 2017)</li>
+      <li><strong>Universitas Malikussaleh</strong> - Teknik Elektro (2020 - 2024)</li>
+      <li><strong>SMK Teknologi Industri YPT. P. Berandan</strong> - Teknik Instalasi Listrik (2017 - 2020)</li>
+      <li><strong>SMP Negeri 1 Pangkalan Susu</strong> (2014 - 2017)</li>
     </ul>
   </section>
 
@@ -87,9 +140,9 @@
       <li><strong>Teknisi</strong> di PT Meraki Teknologi Indonesia (4 bulan)</li>
       <li><strong>Magang</strong> di PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu </li>
       <li><strong>Studi Independen</strong> di PT Orbit Ventura Indonesia</li>
-      <li><strong>Himpunan Mahasiswa Teknik Elektro</strong> – Anggota Divisi Kesekretariatan</li>
-      <li><strong>Sains Riset & Robotika</strong> – Ketua Divisi SDM</li>
-      <li><strong>Himpunan Mahasiswa Langkat</strong> – Anggota Hubungan Masyarakat</li>
+      <li><strong>Himpunan Mahasiswa Teknik Elektro</strong> - Anggota Divisi Kesekretariatan</li>
+      <li><strong>Sains Riset & Robotika</strong> - Ketua Divisi SDM</li>
+      <li><strong>Himpunan Mahasiswa Langkat</strong> - Anggota Hubungan Masyarakat</li>
     </ul>
   </section>
 
@@ -129,8 +182,8 @@
       <div class="col-md-4">
         <h5>Sertifikat</h5>
         <ul>
-          <li>Sertifikat Magang – PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu</li>
-          <li>Sertifikat Studi Independen (MSIB) – PT. Orbit Ventura Indonesia (MSIB)</li>
+          <li>Sertifikat Magang - PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu</li>
+          <li>Sertifikat Studi Independen (MSIB) - PT. Orbit Ventura Indonesia (MSIB)</li>
           <li>Sertifikat Asisten Laboratorium Teknik Elektro</li>
           <li>Sertifikat TOEFL</li>
         </ul>
@@ -175,5 +228,46 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+    // Script untuk membuat partikel animasi
+    document.addEventListener('DOMContentLoaded', function() {
+      const particlesContainer = document.getElementById('particles-js');
+      const particleCount = 30;
+      
+      for (let i = 0; i < particleCount; i++) {
+        createParticle();
+      }
+      
+      function createParticle() {
+        const particle = document.createElement('div');
+        particle.classList.add('particle');
+        
+        // Ukuran acak
+        const size = Math.random() * 5 + 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        
+        // Posisi awal acak
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100 + 100}%`;
+        
+        // Durasi animasi acak
+        const duration = Math.random() * 20 + 10;
+        particle.style.animationDuration = `${duration}s`;
+        
+        // Delay animasi acak
+        particle.style.animationDelay = `${Math.random() * 5}s`;
+        
+        particlesContainer.appendChild(particle);
+        
+        // Setelah animasi selesai, buat partikel baru
+        particle.addEventListener('animationend', function() {
+          particle.remove();
+          createParticle();
+        });
+      }
+    });
+  </script>
 </body>
 </html>
