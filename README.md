@@ -61,14 +61,27 @@
         <li>Instalasi Listrik, CCTV, Smart Home</li>
         <li>Analisis Jaringan Distribusi</li>
         <li>Perakitan & Pengujian Panel Listrik</li>
+        <li>Pengukuran</li>
+        <li>PLC</li>
+        <li>Arus Kuat</li> 
+        <li>Arus Lemah</li>
+        <li>Welding</li>
+        <li>Piping</li>
       </ul>
     </div>
     <div class="col-md-4">
       <h5>Software</h5>
       <ul>
-        <li>Microsoft Office, Arduino IDE, Visio</li>
-        <li>SketchUp, Fritzing, ETAP, LabView</li>
-        <li>Visual Studio Code, Psim</li>
+        <li>Microsoft Office</li>
+        <li>SketchUp</li>
+        <li>Visual Studio Code</li>
+        <li>Psim</li>
+        <li>AutoCad</li>
+        <li>Arduino Ide</li>
+        <li>Visio</li>
+        <li>ETAP</li>
+        <li>LabView</li>
+        <li>Fritzing</li>
       </ul>
     </div>
     <div class="col-md-4">
