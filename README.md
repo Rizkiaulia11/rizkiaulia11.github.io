@@ -16,7 +16,7 @@ p.section-text, li { font-size: 1.05rem; }
 <header class="bg-primary text-white text-center py-5">
   <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" class="rounded mb-3" style="width:220px;height:320px;object-fit:cover;border:4px solid white;">
   <h1 class="fw-bold">Rizki Aulia</h1>
-  <p class="lead">Teknik Elektro • Universitas Malikussaleh</p>
+  <p class="lead fw-bold text-white fs-4">Teknik Elektro • Universitas Malikussaleh</p>
 </header>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
   <div class="container">
@@ -38,8 +38,8 @@ p.section-text, li { font-size: 1.05rem; }
 </nav>
 <section id="about" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-person-fill"></i> Tentang Saya</h2>
-  <p class="section-text">Saya lulusan Teknik Elektro, Universitas Malikussaleh, terbiasa bertanggung jawab dan bekerja sama dalam tim. Memiliki pengalaman magang di PT PLN, studi independen di PT Orbit Ventura Indonesia, dan pengalaman teknisi di PT Meraki Teknologi Indonesia.</p>
-</section>
+  <p class="section-text">Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi. Dan Saya memiliki pengalaman kerja di PT. Meraki Teknologi Indonesia selama 4 bulan sebagai teknisi.</p>
+  </section>
 <section id="education" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-book-fill"></i> Pendidikan</h2>
   <ul>
