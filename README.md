@@ -25,6 +25,7 @@
         <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
         <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
+        <li class="nav-item"><a href="#feedback" class="nav-link">Komentar</a></li>
       </ul>
     </div>
   </div>
@@ -32,7 +33,7 @@
 <section id="about" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-person-fill"></i> Tentang Saya</h2>
   <p class="section-text">Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi. Dan Saya memiliki pengalaman kerja di PT. Meraki Teknologi Indonesia selama 4 bulan sebagai teknisi.</p>
-  </section>
+</section>
 <section id="education" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-book-fill"></i> Pendidikan</h2>
   <ul>
@@ -65,6 +66,8 @@
         <li>PLC</li>
         <li>Arus Kuat</li> 
         <li>Arus Lemah</li>
+        <li>IoT</li>
+        <li>Robotka</li>
         <li>Welding</li>
         <li>Piping</li>
       </ul>
@@ -104,6 +107,24 @@
   <p class="section-text"><strong>Email:</strong> <a href="mailto:11rizkiaulia@gmail.com">11rizkiaulia@gmail.com</a></p>
   <p class="section-text"><strong>Telepon:</strong> +62 8126 5075 517</p>
   <p class="section-text"><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
+</section>
+<section id="feedback" class="container my-5">
+  <h2 class="mb-3 section-title"><i class="bi bi-chat-left-text-fill"></i> Kirim Komentar</h2>
+  <form action="https://formspree.io/f/xrbqlgvn" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nama</label>
+      <input type="text" class="form-control" id="name" name="nama" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Pesan / Komentar</label>
+      <textarea class="form-control" id="message" name="pesan" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Kirim</button>
+  </form>
 </section>
 <footer class="bg-primary text-white text-center py-3">
   <p>&copy; 2025 Rizki Aulia</p>
