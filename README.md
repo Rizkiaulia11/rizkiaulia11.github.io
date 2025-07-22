@@ -67,7 +67,7 @@
         <li>Arus Kuat</li> 
         <li>Arus Lemah</li>
         <li>IoT</li>
-        <li>Robotka</li>
+        <li>Robotika</li>
         <li>Welding</li>
         <li>Piping</li>
       </ul>
