@@ -1,45 +1,8 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portofolio Rizki Aulia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    .particle {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 50%;
-      animation: floatUp linear infinite;
-    }
-    @keyframes floatUp {
-      0% { transform: translateY(0); opacity: 1; }
-      100% { transform: translateY(-120vh); opacity: 0; }
-    }
-    .profile-header {
-      position: relative;
-      overflow: hidden;
-    }
-    #particles-js {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
-    .profile-photo {
-      position: relative;
-      z-index: 1;
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 4px solid white;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
-    }
-  </style>
 </head>
 <body>
   <!-- Welcome Banner -->
