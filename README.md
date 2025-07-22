@@ -23,11 +23,7 @@
   <header class="profile-header text-white text-center py-5">
     <!-- Partikel animasi -->
     <div class="particles" id="particles-js"></div>
-    
-    <div class="profile-content" style="display: flex; flex-direction: column; align-items: center;">
-      <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" class="profile-img">
-      <h1 class="display-4">Rizki Aulia</h1>
-    </div>
+  
   </header>
 
   <!-- Bagian lainnya tetap sama seperti sebelumnya -->
