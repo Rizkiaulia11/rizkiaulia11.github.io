@@ -1,51 +1,43 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Rizki Aulia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    .profile-header {
-      position: relative;
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-      padding: 100px 0;
-      overflow: hidden;
-    }
-    .profile-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid white;
-      margin: 0 auto 20px;
-      display: block;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-    .profile-name {
-      font-size: 2.5rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-    .profile-title {
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
     .particle {
       position: absolute;
-      background-color: rgba(255,255,255,0.7);
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 50%;
-      pointer-events: none;
-      animation: float linear infinite;
+      animation: floatUp linear infinite;
     }
-    @keyframes float {
-      0% {
-        transform: translateY(0) translateX(0) rotate(0deg);
-        opacity: 1;
-      }
-      100% {
-        transform: translateY(-100vh) translateX(100px) rotate(360deg);
-        opacity: 0;
-      }
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(-120vh); opacity: 0; }
+    }
+    .profile-header {
+      position: relative;
+      overflow: hidden;
+    }
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .profile-photo {
+      position: relative;
+      z-index: 1;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 4px solid white;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
   </style>
 </head>
@@ -55,20 +47,16 @@
     <p class="mb-0">Selamat datang di portofolio saya! Senang bisa berbagi profil dan pengalaman dengan Anda.</p>
   </div>
 
-  <header class="profile-header text-white text-center py-5">
+  <header class="profile-header text-white text-center py-5 bg-primary">
     <!-- Partikel animasi -->
     <div class="particles" id="particles-js"></div>
-    
-    <!-- Profile Photo Section -->
-    <div class="container position-relative">
-      <img src="![Pas Foto](https://github.com/user-attachments/assets/76991b36-c197-441b-b7fe-1db74dc91b23)
-/150" alt="Foto Profil Rizki Aulia" class="profile-photo">
-      <h1 class="profile-name">Rizki Aulia</h1>
-      <p class="profile-title">Lulusan Teknik Elektro | Teknisi Profesional</p>
-    </div>
+
+    <!-- Foto Profil -->
+    <img src="Pas Foto.jpg" alt="Foto Profil Rizki Aulia" class="profile-photo mb-3">
+    <h1 class="fw-bold">Rizki Aulia</h1>
+    <p>Teknisi Listrik & Robotika | Lulusan Teknik Elektro</p>
   </header>
 
-  <!-- Rest of your content remains the same -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Menu</a>
@@ -79,7 +67,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a href="#about" class="nav-link">Tentang Saya</a></li>
           <li class="nav-item"><a href="#education" class="nav-link">Pendidikan</a></li>
-          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman dan Organisasi </a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Pengalaman dan Organisasi</a></li>
           <li class="nav-item"><a href="#skills" class="nav-link">Kemampuan</a></li>
           <li class="nav-item"><a href="#cv" class="nav-link">CV</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link">Kontak</a></li>
@@ -88,14 +76,13 @@
     </div>
   </nav>
 
-  <!-- Bagian konten lainnya tetap sama -->
   <section id="about" class="container my-5">
-    <h2 class="mb-3 section-title">Tentang Saya</h2>
-    <p class="section-text">Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi. Dan Saya memiliki pengalaman kerja di PT. Meraki Teknologi Indonesia selama 4 bulan sebagai teknisi.</p>
+    <h2 class="mb-3">Tentang Saya</h2>
+    <p>Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi. Dan Saya memiliki pengalaman kerja di PT. Meraki Teknologi Indonesia selama 4 bulan sebagai teknisi.</p>
   </section>
 
   <section id="education" class="container my-5">
-    <h2 class="mb-3 section-title">Pendidikan</h2>
+    <h2 class="mb-3">Pendidikan</h2>
     <ul>
       <li><strong>Universitas Malikussaleh</strong> - Teknik Elektro (2020 - 2024)</li>
       <li><strong>SMK Teknologi Industri YPT. P. Berandan</strong> - Teknik Instalasi Listrik (2017 - 2020)</li>
@@ -104,10 +91,10 @@
   </section>
 
   <section id="experience" class="container my-5">
-    <h2 class="mb-3 section-title">Pengalaman & Organisasi</h2>
+    <h2 class="mb-3">Pengalaman & Organisasi</h2>
     <ul>
       <li><strong>Teknisi</strong> di PT Meraki Teknologi Indonesia (4 bulan)</li>
-      <li><strong>Magang</strong> di PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu </li>
+      <li><strong>Magang</strong> di PT PLN Rayon Pangkalan Susu & PT. PLN UBP Indonesia Power Pangkalan Susu</li>
       <li><strong>Studi Independen</strong> di PT Orbit Ventura Indonesia</li>
       <li><strong>Himpunan Mahasiswa Teknik Elektro</strong> - Anggota Divisi Kesekretariatan</li>
       <li><strong>Sains Riset & Robotika</strong> - Ketua Divisi SDM</li>
@@ -116,7 +103,7 @@
   </section>
 
   <section id="skills" class="container my-5">
-    <h2 class="mb-3 section-title">Kemampuan & Sertifikat</h2>
+    <h2 class="mb-3">Kemampuan & Sertifikat</h2>
     <div class="row">
       <div class="col-md-4">
         <h5>Hard Skill</h5>
@@ -161,20 +148,19 @@
   </section>
 
   <section id="cv" class="container my-5">
-    <h2 class="mb-3 section-title">Curriculum Vitae</h2>
+    <h2 class="mb-3">Curriculum Vitae</h2>
     <a href="RA FILE.pdf" class="btn btn-primary mb-3" target="_blank">Download CV</a>
   </section>
 
   <section id="contact" class="container my-5">
-    <h2 class="mb-3 section-title">Kontak</h2>
-    <p class="section-text"><strong>Email:</strong> <a href="mailto:11rizkiaulia@gmail.com">11rizkiaulia@gmail.com</a></p>
-    <p class="section-text"><strong>Telepon:</strong> +62 8126 5075 517</p>
-    <p class="section-text"><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
+    <h2 class="mb-3">Kontak</h2>
+    <p><strong>Email:</strong> <a href="mailto:11rizkiaulia@gmail.com">11rizkiaulia@gmail.com</a></p>
+    <p><strong>Telepon:</strong> +62 8126 5075 517</p>
+    <p><strong>Lokasi:</strong> Medan, Sumatera Utara</p>
   </section>
 
-  <!-- Form Umpan Balik -->
   <section id="feedback" class="container my-5">
-    <h2 class="mb-3 section-title">Kirim Komentar</h2>
+    <h2 class="mb-3">Kirim Komentar</h2>
     <form action="https://formspree.io/f/xrbqlgvn" method="POST">
       <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
@@ -197,40 +183,25 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  
   <script>
-    // Script untuk membuat partikel animasi
     document.addEventListener('DOMContentLoaded', function() {
       const particlesContainer = document.getElementById('particles-js');
       const particleCount = 30;
-      
       for (let i = 0; i < particleCount; i++) {
         createParticle();
       }
-      
       function createParticle() {
         const particle = document.createElement('div');
         particle.classList.add('particle');
-        
-        // Ukuran acak
         const size = Math.random() * 5 + 2;
         particle.style.width = `${size}px`;
         particle.style.height = `${size}px`;
-        
-        // Posisi awal acak
         particle.style.left = `${Math.random() * 100}%`;
         particle.style.top = `${Math.random() * 100 + 100}%`;
-        
-        // Durasi animasi acak
         const duration = Math.random() * 20 + 10;
         particle.style.animationDuration = `${duration}s`;
-        
-        // Delay animasi acak
         particle.style.animationDelay = `${Math.random() * 5}s`;
-        
         particlesContainer.appendChild(particle);
-        
-        // Setelah animasi selesai, buat partikel baru
         particle.addEventListener('animationend', function() {
           particle.remove();
           createParticle();
