@@ -1,13 +1,16 @@
+<!DOCTYPE html>
 <html lang="id">
-<head><meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
+<head>
+  <meta name="google-site-verification" content="eb4TsiEpMWYICwUIO5R95odfXxbFezjOyksVh7aC2Ck" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portofolio Rizki Aulia</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="bg-dark text-white text-center py-5">
     <div style="display: flex; flex-direction: column; align-items: center;">
-      <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-bottom: 20px; border: 4px solid #fff;">
+      <img src="Pas Foto.jpg" alt="Foto Rizki Aulia" style="width: 240px; height: 360px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; border: 4px solid #fff;">
       <h1 class="display-4">Rizki Aulia</h1>
       <p class="lead mb-0">Teknik Elektro • Universitas Malikussaleh</p>
     </div>
@@ -113,4 +116,7 @@
   <footer class="bg-dark text-white text-center py-3">
     <p>&copy; 2025 Rizki Aulia.</p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
