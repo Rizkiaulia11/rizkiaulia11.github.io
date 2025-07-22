@@ -61,7 +61,8 @@
     
     <!-- Profile Photo Section -->
     <div class="container position-relative">
-      <img src="https://via.placeholder.com/150" alt="Foto Profil Rizki Aulia" class="profile-photo">
+      <img src="![Pas Foto](https://github.com/user-attachments/assets/76991b36-c197-441b-b7fe-1db74dc91b23)
+/150" alt="Foto Profil Rizki Aulia" class="profile-photo">
       <h1 class="profile-name">Rizki Aulia</h1>
       <p class="profile-title">Lulusan Teknik Elektro | Teknisi Profesional</p>
     </div>
