@@ -11,76 +11,7 @@
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
-    
-    .profile-header {
-      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
-      background-size: 300% 300%;
-      animation: gradientMove 15s ease infinite;
-      position: relative;
-      overflow: hidden;
-      color: white;
-    }
-    
-    .profile-header::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
-      opacity: 0.15;
-      animation: zoomPan 20s linear infinite;
-    }
-    
-    @keyframes zoomPan {
-      0% { transform: scale(1) rotate(0deg); }
-      50% { transform: scale(1.1) rotate(1deg); }
-      100% { transform: scale(1) rotate(0deg); }
-    }
-    
-    .profile-content {
-      position: relative;
-      z-index: 1;
-    }
-    
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 4px solid rgba(255,255,255,0.8);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease;
-    }
-    
-    .profile-img:hover {
-      transform: scale(1.05);
-    }
-    
-    /* Efek partikel */
-    .particles {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 0;
-      overflow: hidden;
-    }
-    
-    .particle {
-      position: absolute;
-      background: rgba(255,255,255,0.5);
-      border-radius: 50%;
-      animation: float linear infinite;
-    }
-    
-    @keyframes float {
-      0% { transform: translateY(0) translateX(0); opacity: 1; }
-      100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
-    }
+
   </style>
 </head>
 <body>
