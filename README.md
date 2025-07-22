@@ -271,4 +271,3 @@
   </script>
 </body>
 </html>
-hilangkan bacaan rizkiaulia 11 paling atas pojok kiri
