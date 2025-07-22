@@ -1,16 +1,9 @@
-<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Portofolio Rizki Aulia</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<style>
-body { font-size: 1.1rem; color: #333; background-color: white; }
-h2.section-title { font-size: 1.8rem; color: #0d6efd; }
-p.section-text, li { font-size: 1.05rem; }
-</style>
 </head>
 <body>
 <header class="bg-primary text-white text-center py-5">
