@@ -4,6 +4,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .profile-header {
+      position: relative;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      padding: 100px 0;
+      overflow: hidden;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid white;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .profile-name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .profile-title {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    .particle {
+      position: absolute;
+      background-color: rgba(255,255,255,0.7);
+      border-radius: 50%;
+      pointer-events: none;
+      animation: float linear infinite;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) translateX(100px) rotate(360deg);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Welcome Banner -->
@@ -14,10 +58,16 @@
   <header class="profile-header text-white text-center py-5">
     <!-- Partikel animasi -->
     <div class="particles" id="particles-js"></div>
-  
+    
+    <!-- Profile Photo Section -->
+    <div class="container position-relative">
+      <img src="https://via.placeholder.com/150" alt="Foto Profil Rizki Aulia" class="profile-photo">
+      <h1 class="profile-name">Rizki Aulia</h1>
+      <p class="profile-title">Lulusan Teknik Elektro | Teknisi Profesional</p>
+    </div>
   </header>
 
-  <!-- Bagian lainnya tetap sama seperti sebelumnya -->
+  <!-- Rest of your content remains the same -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#">Menu</a>
