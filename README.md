@@ -33,7 +33,6 @@
 <section id="about" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-person-fill"></i> Tentang Saya</h2>
   <p class="section-text">Saya adalah lulusan program studi Teknik Elektro, Universitas Malikussaleh. Saya mampu diandalkan dan diberi tanggung jawab juga selalu berusaha memberikan yang terbaik dalam setiap pekerjaan saya. Saya mudah beradaptasi dengan lingkungan sosial yang baru, mampu bekerja sama dengan baik dalam tim dan yang terpenting dalam hidup saya adalah selalu berusaha agar orang lain mengenal diri saya karena manfaat yang saya berikan. Saya memiliki pengalaman magang di PT. PLN (Persero) Rayon Pangkalan Susu selama 3 bulan sebagai teknisi, Studi Independen di PT. Orbit Ventura Indonesia selama 4 bulan dan PT. PLN Indonesia Power UBP Pangkalan Susu 1 bulan sebagai teknisi.
-</section>
 <section id="education" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-book-fill"></i> Pendidikan</h2>
   <ul>
