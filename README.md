@@ -97,7 +97,7 @@
 </section>
 <section id="cv" class="container my-5 text-center">
   <h2 class="mb-3 section-title"><i class="bi bi-file-earmark-person-fill"></i> Curriculum Vitae</h2>
-  <a href="DOKUMEN RIZKI.pdf" class="btn btn-primary" target="_blank">Download CV</a>
+  <a href="RIZKI - AULIA.pdf" class="btn btn-primary" target="_blank">Download CV</a>
 </section>
 <section id="contact" class="container my-5">
   <h2 class="mb-3 section-title"><i class="bi bi-envelope-fill"></i> Kontak</h2>
